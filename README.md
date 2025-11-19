@@ -7,6 +7,9 @@
   [<a href="README-FR.md">French</a>] | [<a href="README-DE.md">Deutsch</a>] | [<a href="README-NL.md">Nederlands</a>] | [<a href="README-TW.md">繁體中文</a>] | [<a href="README-ZH.md">简体中文</a>] | [<a href="README-RU.md">Русский</a>]<br>
 </p>
 
+![](https://tokeisrv.sctg.eu.org/b1/github.com/sctg-development/sctgdesk-server?rust&category=code)
+![](https://tokeisrv.sctg.eu.org/b1/github.com/sctg-development/sctgdesk-server?rust&category=comments)  
+
 # SctgDesk Server Program
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/sctg/sctgdesk-server)
