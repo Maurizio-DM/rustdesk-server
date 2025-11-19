@@ -7,6 +7,9 @@
   [<a href="README-FR.md">French</a>] | [<a href="README-DE.md">Deutsch</a>] | [<a href="README-NL.md">Nederlands</a>] | [<a href="README-TW.md">繁體中文</a>] | [<a href="README-ZH.md">简体中文</a>] | [<a href="README-RU.md">Русский</a>]<br>
 </p>
 
+![](https://tokeisrv.sctg.eu.org/b1/github.com/sctg-development/sctgdesk-server?rust\&category=code)
+![](https://tokeisrv.sctg.eu.org/b1/github.com/sctg-development/sctgdesk-server?rust\&category=comments)
+
 # SctgDesk Server Programma
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/sctg/sctgdesk-server)
@@ -20,27 +23,27 @@
 
 Dit is een aangepaste versie van RustDesk Server, die gratis en open source is.
 
-*   Het eerste verschil is dat deze versie de nieuwe *Tcp* modus inbegrepen in de RustDesk Server Pro-versie.
+*   Het eerste verschil is dat deze versie de nieuwe versie bevat *Tcp* modus inbegrepen in de RustDesk Server Pro-versie.
 *   Het tweede verschil is dat deze versie een voorlopige implementatie van de Rustdesk Server Pro API-server bevat.
     *   Ondersteuning voor persoonlijk adresboek
     *   Ondersteuning voor gedeeld adresboek op groepsniveau
-        *   alleen-lezen, lezen-schrijven, admin
+        *   Alleen-lezen, lezen-schrijven, admin
     *   Ondersteuning voor gedeeld adresboek op gebruikersniveau
-        *   alleen-lezen, lezen-schrijven, admin
+        *   Alleen-lezen, lezen-schrijven, admin
 *   Het derde verschil is dat deze versie een voorlopige implementatie van een eenvoudige webconsole bevat.
 
 De webconsole is toegankelijk op het adres `http://<server-ip>:21114/` met login "admin" en wachtwoord "Hallo, wereld!" .\
-U kunt de API-documentatie in de ingebouwde API-server doorzoeken op het adres `http://<server-ip>:21114/api/doc/`.
+Je kunt de API-documentatie bekijken in de ingebouwde API-server op het adres `http://<server-ip>:21114/api/doc/`.
 
-Een niet-interactieve API-documentatie is beschikbaar op [sctgdesk-api-server opslagplaats](https://sctg-development.github.io/sctgdesk-api-server/).
+Een niet-interactieve API-documentatie is beschikbaar op [sctgdesk-api-server repo](https://sctg-development.github.io/sctgdesk-api-server/).
 
-## Geef het project een ster
+## Start het project
 
-**Als je mijn werk waardeert, overweeg dan om het een ster te geven! 🤩 of een** [![](https://img.shields.io/static/v1?label=Sponsor\&message=%E2%9D%A4\&logo=GitHub\&color=%23fe8e86)](https://github.com/sponsors/sctg-development)
+**Als je mijn werk waardeert, overweeg het dan alsjeblieft een ster te geven! 🤩 of een** [![](https://img.shields.io/static/v1?label=Sponsor\&message=%E2%9D%A4\&logo=GitHub\&color=%23fe8e86)](https://github.com/sponsors/sctg-development)
 
 ## TL; DR
 
-U kunt het volgende gebruiken `docker-compose.yml` bestand om de server te starten:
+Je kunt het volgende gebruiken `docker-compose.yml` bestand om de server te starten:
 
 ```yaml
 version: '3'
@@ -91,26 +94,26 @@ docker-compose up
 
 ## Binaries
 
-Binaire bestanden zijn beschikbaar voor de volgende platforms:
+Binaries zijn beschikbaar voor de volgende platforms:
 
 *   Linux x86\_64 statisch gekoppeld
 *   Linux arm64 statisch gekoppeld
 *   Linux armv7 statisch gekoppeld
 *   MacOS Intel
-*   MacOS Apple Silicium
+*   MacOS Apple Silicon
 *   Windows x86\_64
 
-### Standaard admin-gebruiker
+### Standaard beheerder
 
-De standaard admin-gebruiker wordt gemaakt met de gebruikersnaam `admin` en het wachtwoord `Hello,world!`. U kunt het wachtwoord wijzigen na de eerste keer inloggen op de webconsole.
+De standaard admin-gebruiker wordt aangemaakt met de gebruikersnaam `admin` en het wachtwoord `Hello,world!`. Je kunt het wachtwoord wijzigen na de eerste inlogmethode op de webconsole.
 
 ## API Standalone versie
 
-De api standalone versie is een versie van de server die de API-server en de webconsole bevat, maar niet de rendez-vous server.\
+De API standalone versie is een versie van de server die de API-server en de webconsole bevat, maar niet de rendez-vous server.\
 De standalone versie is beschikbaar in een eigen repository [sctgdesk-api-server](https://github.com/sctg-development/sctgdesk-api-server).\
-Voor alle api- of webconsole-gerelateerde problemen verwijzen wij u naar de [sctgdesk-api-server](https://github.com/sctg-development/sctgdesk-api-server) opslagplaats.
+Voor alle API- of webconsole-gerelateerde problemen, raadpleeg de [sctgdesk-api-server](https://github.com/sctg-development/sctgdesk-api-server) opslagplaats.
 
-## Schermafbeeldingen
+## Screenshots
 
 ### Webconsole
 
@@ -130,11 +133,11 @@ Voor alle api- of webconsole-gerelateerde problemen verwijzen wij u naar de [sct
 
 <img width="621" alt="add rules" src="https://github.com/sctg-development/sctgdesk-api-server/assets/165936401/355f3903-2b54-4b08-abd0-e33c84a260ed">
 
-### Api-documentatie
+### API-documentatie
 
 <img width="1502" alt="apidoc" src="https://github.com/sctg-development/sctgdesk-server/assets/165936401/88fe7910-fe62-43e5-a16c-70dc1201e040">
 
-### Gebruik in Rustdesk client
+### Gebruik in de Rustdesk-client
 
 <img width="913" alt="Capture d’écran 2024-05-24 à 12 14 34" src="https://github.com/sctg-development/sctgdesk-server/assets/165936401/1b253577-dce2-4163-9a49-ba4b3da37812">
 
@@ -144,8 +147,8 @@ Voor alle api- of webconsole-gerelateerde problemen verwijzen wij u naar de [sct
 
 ## Autoupdate-links genereren
 
-We hebben onze client aangepast om de autoupdate-links van de api-server op te halen in plaats van uit Github-releases.\
-Om de autoupdate-links te laten werken, moet u uw client wijzigen om de autoupdate-links van de api-server op te halen. Dit [Hoe je het kunt doen](https://github.com/sctg-development/sctgdesk/blob/481d3516fef1daa145d8044594187cb11959f8be/src/common.rs#L953L972):
+We hebben onze client aangepast om de autoupdate-links van de API-server te halen in plaats van Github-releases.\
+Om de autoupdate-links te laten werken, moet je je client aanpassen om de autoupdate-links van de API-server op te halen. Dit [Hoe je het kunt doen](https://github.com/sctg-development/sctgdesk/blob/481d3516fef1daa145d8044594187cb11959f8be/src/common.rs#L953L972):
 
 ```rust
 // src/common.rs
@@ -173,9 +176,9 @@ async fn check_software_update_() -> hbb_common::ResultType<()> {
 
 # Veiligheid
 
-De embedded API-server is niet beveiligd of beschermd tegen DDOS-aanvallen. Een goede gewoonte is om een reverse proxy voor de API-server te gebruiken. NGINX is hiervoor een goede keuze. HAProxy is ook een goede keuze.\
-Wij gebruiken HAProxy voor de API-server in onze productieomgeving.
-Dit is ons configuratiebestand voor HAProxy, het wordt alleen als voorbeeld gegeven. Je moet het aanpassen aan je eigen behoeften.:
+De embedded API-server is niet beveiligd of beschermd tegen DDOS-aanvallen. Een goede praktijk is om een reverse proxy te gebruiken voor de API-server. NGINX is hiervoor een goede keuze. HAProxy is ook een goede keuze.\
+We gebruiken HAProxy voor de API-server in onze productieomgeving.
+Dit is ons configuratiebestand voor HAProxy, het wordt alleen als voorbeeld verstrekt. Je moet het aanpassen aan je eigen behoeften:
 
 ```haproxy
 global
@@ -262,30 +265,30 @@ WantedBy=multi-user.target
 
 # Beperk ongewenste toegang
 
-Om de toegang tot uw server te beperken, kunt u de `--logged-in-only` optie of stel de knop in `LOGGED_IN_ONLY=Y` omgevingsvariabele voor de `hbbs` server. Dit beperkt de controle tot alleen ingelogde gebruikers.
+Om de toegang tot je server te beperken, kun je de `--logged-in-only` optie of stel de `LOGGED_IN_ONLY=Y` Omgevingsvariabele voor de `hbbs` server. Dit beperkt de controle tot alleen ingelogde gebruikers.
 
-Zelfs als deze optie is ingeschakeld, kunnen gebruikers zich nog steeds registreren op de Rendez-vous-server, maar kunnen ze de peer van een andere gebruiker niet beheren. Als iemand een peer probeert te beheren zonder ingelogd te zijn, krijgt hij of zij een foutmelding:
+Zelfs met deze optie ingeschakeld kunnen gebruikers zich nog steeds registreren op de Rendez-vous server, maar ze kunnen de peer van een andere gebruiker niet besturen. Als iemand probeert een peer te controleren zonder ingelogd te zijn, krijgt hij een foutmelding:
 
 <img width="524" alt="Error message for unauthenticated control attempt" src="https://github.com/user-attachments/assets/cfa46504-39d8-46a7-9072-3ece6818b4a3">
 
-Door deze functie in te schakelen, kunt u een extra beveiligingslaag aan uw server toevoegen en ongeoorloofde toegang voorkomen.
+Door deze functie in te schakelen, kun je een extra beveiligingslaag aan je server toevoegen en ongeautoriseerde toegang voorkomen.
 
 **Configureren `LOGGED_IN_ONLY`**
 
 Om deze functie in te schakelen:
 
-1.  Stel de knop in `LOGGED_IN_ONLY=Y` omgevingsvariabele voor de `hbbs` server.
-2.  Als alternatief kunt u de `--logged-in-only` optie bij het uitvoeren van de `hbbs` server.
+1.  Stel de `LOGGED_IN_ONLY=Y` Omgevingsvariabele voor de `hbbs` server.
+2.  Alternatief kun je de `--logged-in-only` optie bij het uitvoeren van de `hbbs` server.
 
 **Voorbeeld**
 
-Om de `LOGGED_IN_ONLY` omgevingsvariabele, kunt u de volgende regel toevoegen aan uw `~/.bashrc` bestand of gelijkwaardig:
+Om de `LOGGED_IN_ONLY` omgevingsvariabele kunt u de volgende regel toevoegen aan uw `~/.bashrc` Bestand of gelijkwaardig:
 
 ```bash
 export LOGGED_IN_ONLY=Y
 ```
 
-# RustDesk Server Programma
+# RustDesk Server Program
 
 [![build](https://github.com/sctg-development/sctgdesk-server/actions/workflows/multiarch-docker-hub.yml/badge.svg)](https://github.com/sctg-development/sctgdesk-server/actions/workflows/multiarch-docker-hub.yml)
 [![build](https://github.com/sctg-development/sctgdesk-server/actions/workflows/macos-intel-build.yml/badge.svg)](https://github.com/sctg-development/sctgdesk-server/actions/workflows/macos-intel-build.yml)
@@ -297,11 +300,11 @@ export LOGGED_IN_ONLY=Y
 
 [**FAQ**](https://github.com/rustdesk/rustdesk/wiki/FAQ)
 
-Zelf uw eigen RustDesk-server hosten, deze is gratis en open source.
+Host zelf je eigen RustDesk-server, die is gratis en open source.
 
-## Handmatig bouwen
+## Hoe handmatig te bouwen
 
-Eerst moet je een werkende Rust-ontwikkelingstoolchain en een Node ≥ 20 werkende installatie hebben.
+Eerst moet je een werkende Rust-ontwikkeltoolchain hebben en een werkende Node ≥ 20 werkende installatie.
 
 *   Unices (Linux, MacOS, enz.):
 
@@ -309,57 +312,57 @@ Eerst moet je een werkende Rust-ontwikkelingstoolchain en een Node ≥ 20 werken
 DATABASE_URL=sqlite://$(pwd)/db_v2.sqlite3 cargo build --release
 ```
 
-*   Vensters met cmd.exe shell:
+*   Ramen met cmd.exe shell:
 
 ```cmd
 set "DATABASE_URL=sqlite://%CD%/db_v2.sqlite3" && cargo build --release
 ```
 
-Er worden drie uitvoerbare bestanden gegenereerd in target/release.
+Drie uitvoerbare bestanden worden gegenereerd in target/release.
 
-*   hbbs - RustDesk ID/Rendezvous server met API server
-*   hbbr - RustDesk relay server
-*   rustdesk-utils - RustDesk CLI hulpprogramma's
+*   hbbs - RustDesk ID/Rendezvous-server met API-server
+*   hbbr - RustDesk relaisserver
+*   rustdesk-utils - RustDesk CLI-hulpprogramma's
 
-U kunt bijgewerkte binaire bestanden vinden op de [Releases](https://github.com/sctg-development/sctgdesk-server/releases) bladzijde.
+Je kunt bijgewerkte binairen vinden op de [Releases](https://github.com/sctg-development/sctgdesk-server/releases) bladzijde.
 
-Alle vrijgegeven binaire bestanden na release v1.1.99-40 worden geattesteerd met Github-acties. U kunt de attestatie controleren door de sha256som van het binaire bestand te controleren met `https://search.sigstore.dev/?hash=<sha256>` bijvoorbeeld.
+Alle vrijgegeven binaries na release v1.1.99-40 zijn bevestigd met Github Actions. Je kunt de attestatie controleren door de sha256som van de binaire te controleren met `https://search.sigstore.dev/?hash=<sha256>` bijvoorbeeld.
 
-Als je extra functies wilt [RustDesk Server Pro](https://rustdesk.com/pricing.html) zou misschien beter bij je passen.
+Als je extra functies wilt [RustDesk Server Pro](https://rustdesk.com/pricing.html) Misschien past het beter bij je.
 
-Als u uw eigen server wilt ontwikkelen, [rustdesk-server-demo](https://github.com/rustdesk/rustdesk-server-demo) is misschien een betere en eenvoudigere start voor u dan deze repo.
+Als je je eigen server wilt ontwikkelen, [rustdesk-server-demo](https://github.com/rustdesk/rustdesk-server-demo) Misschien is het een betere en eenvoudigere start voor jou dan deze repo.
 
-## Docker-afbeeldingen
+## Docker-images
 
-Docker-afbeeldingen worden automatisch gegenereerd en gepubliceerd op elke github-release.
+Docker-images worden automatisch gegenereerd en gepubliceerd op elke github-release.
 
-Deze beelden zijn gebouwd tegen `ubuntu-22.04` met de enige toevoeging van de belangrijkste binaire bestanden (`hbbr` en `hbbs`). Ze zijn beschikbaar op [Docker-hub](https://hub.docker.com/r/sctg/sctgdesk-server/) met deze tags:
+Deze beelden zijn opgebouwd tegen `ubuntu-22.04` met de enige toevoeging van de hoofdbinaire (`hbbr` en `hbbs`). Ze zijn beschikbaar op [Docker-hub](https://hub.docker.com/r/sctg/sctgdesk-server/) met deze tags:
 
-| Architectuur | Afbeelding:Tag |
+| Architectuur | afbeelding:tag |
 | --- | --- |
-| AMD64 | `sctg/sctgdesk-server:latest` |
+| amd64 | `sctg/sctgdesk-server:latest` |
 | arm64v8 | `sctg/sctgdesk-server:latest` |
 | arm32v7 | `sctg/sctgdesk-server:latest` |
 
-U kunt deze afbeeldingen direct starten met `docker run` met deze commando's:
+Je kunt deze afbeeldingen direct starten met `docker run` met deze commando's:
 
 ```bash
 docker run --name hbbs --net=host -v "$PWD/data:/usr/local/share/sctgdesk" -d sctg/sctgdesk-server:latest hbbs -r <relay-server-ip[:port]> 
 docker run --name hbbr --net=host -v "$PWD/data:/usr/local/share/sctgdesk" -d sctg/sctgdesk-server:latest hbbr 
 ```
 
-of zonder `--net=host`, maar directe P2P-verbinding kan niet werken.
+of zonder `--net=host`, maar P2P-directe verbinding kan niet werken.
 
-Voor systemen die SELinux gebruiken, moet de `/root` bij `/root:z` is nodig om de containers correct te laten werken. Als alternatief kan SELinux-containerscheiding volledig worden uitgeschakeld, waardoor de optie wordt toegevoegd `--security-opt label=disable`.
+Voor systemen die SELinux gebruiken, vervanging `/root` bij `/root:z` is vereist om de containers correct te laten werken. Als alternatief kan SELinux-containerscheiding volledig worden uitgeschakeld door de optie toe te voegen `--security-opt label=disable`.
 
 ```bash
 docker run --name hbbs -p 21114:21114 -p 21115:21115 -p 21116:21116 -p 21116:21116/udp -p 21118:21118 -v "$PWD/data:/usr/local/share/sctgdesk" -d sctg/sctgdesk-server:latest hbbs -r <relay-server-ip[:port]> 
 docker run --name hbbr -p 21117:21117 -p 21119:21119 -v "$PWD/data:/usr/local/share/sctgdesk" -d sctg/sctgdesk-serverlatest hbbr 
 ```
 
-De `relay-server-ip` parameter is het IP-adres (of DNS-naam) van de server waarop deze containers worden uitgevoerd. De **facultatief** `port` parameter moet worden gebruikt als u een andere poort gebruikt dan **21117** voor `hbbr`.
+De `relay-server-ip` parameter is het IP-adres (of DNS-naam) van de server die deze containers draait. De **facultatief** `port` De parameter moet worden gebruikt als je een andere poort gebruikt dan **21117** voor `hbbr`.
 
-U kunt ook docker-compose gebruiken, waarbij u deze configuratie als sjabloon gebruikt:
+Je kunt docker-compose ook gebruiken, waarbij je deze configuratie als sjabloon gebruikt:
 
 ```yaml
 version: '3'
@@ -402,29 +405,29 @@ services:
     restart: unless-stopped
 ```
 
-Bewerk regel 16 om naar uw relay-server te verwijzen (degene die luistert op poort 21117). U kunt ook de volumelijnen (lijn 18 en lijn 33) bewerken als dat nodig is.
+Edit regel 16 om naar je relaisserver te wijzen (degene die luistert op poort 21117). Je kunt ook de volumelijnen (lijn 18 en lijn 33) aanpassen als dat nodig is.
 
-(Docker-Compose Credits gaat naar @lukebarone en @QuiGonLeong)
+(docker-compose krediet gaat naar @lukebarone en @QuiGonLeong)
 
-> Merk op dat hier de sctg/sctgdesk-server-server:latest in China kan worden vervangen door het nieuwste versienummer op dockerhub, zoals sctg/sctgdesk-server-server:1.1.99-37. Anders kan de oude versie worden teruggetrokken vanwege beeldversnelling.
+> Let op dat hier het sctg/sctgdesk-server-server:latest in China kan worden vervangen door het nieuwste versienummer op dockerhub, zoals sctg/sctgdesk-server-server:1.1.99-37. Anders kan de oude versie worden verwijderd door beeldversnelling.
 
-## Hoe maak je een sleutelpaar aan?
+## Hoe maak je een sleutelbord
 
-Voor versleuteling is een sleutelpaar nodig; Je kunt het verstrekken, zoals eerder uitgelegd, maar je hebt een manier nodig om er een te maken.
+Voor encryptie is een sleutelhanger nodig; Je kunt het aanbieden, zoals eerder uitgelegd, maar je hebt een manier nodig om er een te maken.
 
-U kunt deze opdracht gebruiken om een sleutelpaar te genereren:
+Je kunt dit commando gebruiken om een sleutelhanger te genereren:
 
 ```bash
 /usr/bin/rustdesk-utils genkeypair
 ```
 
-Als je de `rustdesk-utils` pakket dat op uw systeem is geïnstalleerd, kunt u dezelfde opdracht aanroepen met Docker:
+Als je de `rustdesk-utils` pakket op je systeem geïnstalleerd, kun je hetzelfde commando aanroepen met docker:
 
 ```bash
 docker run --rm --entrypoint /usr/bin/rustdesk-utils  sctg/sctgdesk-server-server:latest genkeypair
 ```
 
-De uitvoer ziet er ongeveer zo uit:
+De output zal ongeveer als volgt zijn:
 
 ```text
 Public Key:  8BLLhtzUBU/XKAH4mep3p+IX4DSApe7qbAwNH9nv4yA=
@@ -433,30 +436,30 @@ Secret Key:  egAVd44u33ZEUIDTtksGcHeVeAwywarEdHmf99KM5ajwEsuG3NQFT9coAfiZ6nen4hf
 
 ## Pakketten
 
-Voor elk binair bestand zijn aparte .deb pakketten beschikbaar, deze vind je in de [Releases](https://github.com/sctg-development/sctgdesk-server/releases).
+Er zijn aparte .deb pakketten beschikbaar voor elke binaire map, die je kunt vinden in de [Releases](https://github.com/sctg-development/sctgdesk-server/releases).
 Deze pakketten zijn bedoeld voor de volgende distributies:
 
 *   Ubuntu 22.04 LTS
-*   MacOS Intel of Apple Silicium
-*   Windows x86\_64 en i686
+*   MacOS Intel of Apple Silicon
+*   Windows x86\_64 of i686
 
 ## ENV-variabelen
 
-hbbs en hbbr kunnen worden geconfigureerd met behulp van deze ENV-variabelen.
-U kunt de variabelen zoals gewoonlijk specificeren of een `.env` bestand.
+hbbs en hbbr kunnen worden geconfigureerd met deze ENV-variabelen.
+Je kunt de variabelen zoals gewoonlijk specificeren of een `.env` bestand.
 
-| variabel | binair | Beschrijving |
+| variabele | binair | Beschrijving |
 | --- | --- | --- |
-| ALWAYS_USE_RELAY | hbbs | indien ingesteld op **"Y"** Directe peer-verbinding is niet toegestaan |
-| DOWNGRADE_START_CHECK | HBBR | Vertraging (in seconden) voor downgradecontrole |
-| DOWNGRADE_THRESHOLD | HBBR | Drempel voor downgradecontrole (bit/ms) |
-| SLEUTEL | HBBS/HBBR | indien ingesteld dwingt u het gebruik van een specifieke toets af, indien ingesteld op **"\_"** Forceer het gebruik van een sleutel |
+| ALWAYS_USE_RELAY | HBBS | als ingesteld op **"J"** Staat directe peerverbinding niet toe |
+| DOWNGRADE_START_CHECK | HBBR | Vertraging (in seconden) voor downgrade Check |
+| DOWNGRADE_THRESHOLD | HBBR | Drempel van downgrade-controle (bit/ms) |
+| SLEUTEL | HBBS/HBBR | als ingesteld is, dwingt het gebruik van een specifieke sleutel af, als ingesteld op **"\_"** Dwing het gebruik van elke sleutel |
 | LIMIT_SPEED | HBBR | snelheidslimiet (in Mb/s) |
-| OAUTH2\_CONFIG_FILE | hbbs | Pad voor OAUTH2 configuratiebestand |
-| OAUTH2\_CREATE_USER | hbbs | indien ingesteld op **"1"** Een gebruiker maken als deze niet bestaat |
-| HAVEN | HBBS/HBBR | Luisterpoort (21116 voor HBBS - 21117 voor HBBR) |
-| RELAIS | hbbs | IP-adres/DNS-naam van de machines waarop hbbr draait (gescheiden door komma's) |
-| RUST_LOG | allemaal | Foutopsporingsniveau instellen (fout|waarschuwen|info|debuggen|traceren) |
-| S3CONFIG_FILE | hbbs | Pad voor S3 configuratiebestand |
-| SINGLE_BANDWIDTH | HBBR | maximale bandbreedte voor een enkele verbinding (in Mb/s) |
+| OAUTH2\_CONFIG_FILE | HBBS | Path for OAUTH2 config file |
+| OAUTH2\_CREATE_USER | HBBS | als ingesteld op **"1"** Maak een gebruiker aan als die niet bestaat |
+| PORT | HBBS/HBBR | Luisterpoort (21116 voor HBBS - 21117 voor HBBR) |
+| ESTAFETTE | HBBS | IP-adres/DNS-naam van de machines die hbbr draaien (gescheiden door komma) |
+| RUST_LOG | alle | Set Debug Level (fout|waarschuw|info|debug|trace) |
+| S3CONFIG_FILE | HBBS | Pad voor S3 configuratiebestand |
+| SINGLE_BANDWIDTH | HBBR | maximale bandbreedte voor één enkele verbinding (in Mb/s) |
 | TOTAL_BANDWIDTH | HBBR | maximale totale bandbreedte (in Mb/s) |
