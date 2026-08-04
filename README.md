@@ -10,7 +10,7 @@
 ![](https://tokeisrv.sctg.eu.org/b1/github.com/sctg-development/sctgdesk-server?rust&category=code)
 ![](https://tokeisrv.sctg.eu.org/b1/github.com/sctg-development/sctgdesk-server?rust&category=comments)  
 
-# SctgDesk Server Program
+# Derived from SctgDesk Server Program with some mods, compatible with clients >= 1.4.7
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/sctg/sctgdesk-server)
 [![build](https://github.com/sctg-development/sctgdesk-server/actions/workflows/multiarch-docker-hub.yml/badge.svg)](https://github.com/sctg-development/sctgdesk-server/actions/workflows/multiarch-docker-hub.yml)
