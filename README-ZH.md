@@ -10,40 +10,40 @@
 ![](https://tokeisrv.sctg.eu.org/b1/github.com/sctg-development/sctgdesk-server?rust\&category=code)
 ![](https://tokeisrv.sctg.eu.org/b1/github.com/sctg-development/sctgdesk-server?rust\&category=comments)
 
-# SctgDesk 服务器程序
+# Derived from SctgDesk Server Program with some mods, compatible with clients >= 1.4.7
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/sctg/sctgdesk-server)
 [![build](https://github.com/sctg-development/sctgdesk-server/actions/workflows/multiarch-docker-hub.yml/badge.svg)](https://github.com/sctg-development/sctgdesk-server/actions/workflows/multiarch-docker-hub.yml)
 [![build](https://github.com/sctg-development/sctgdesk-server/actions/workflows/macos-intel-build.yml/badge.svg)](https://github.com/sctg-development/sctgdesk-server/actions/workflows/macos-intel-build.yml)
 [![build](https://github.com/sctg-development/sctgdesk-server/actions/workflows/windows.yml/badge.svg)](https://github.com/sctg-development/sctgdesk-server/actions/workflows/windows.yml)
 
-[**二进制下载**](https://github.com/sctg-development/sctgdesk-server/releases)
+[**Binary Download**](https://github.com/sctg-development/sctgdesk-server/releases)
 
-[**API 文档**](https://sctg-development.github.io/sctgdesk-api-server/)
+[**API Documentation**](https://sctg-development.github.io/sctgdesk-api-server/)
 
-这是RustDesk Server的修改版，RustDesk是免费且开源的。
+This is a modified version of RustDesk Server, which is free and open source.
 
-*   第一个区别是这个版本包含了新的*TCP*RustDesk Server Pro 版本中包含的模式。
-*   第二个区别是该版本包含了 Rustdesk Server Pro API 服务器的初步实现。
-    *   个人通讯录的支持
-    *   群组层面对共享通讯录的支持
-        *   只读、读写、管理员
-    *   用户级对共享通讯录的支持
-        *   只读、读写、管理员
-*   第三个区别是该版本包含了一个简单的网页控制台的初步实现。
+*   The first difference is that this version includes the new *tcp* mode included in the RustDesk Server Pro version.
+*   The second difference is that this version includes a preliminary implementation of the Rustdesk Server Pro API server.
+    *   Support for personal address book
+    *   Support for shared address book at group level
+        *   read-only, read-write, admin
+    *   Support for shared address book at user level
+        *   read-only, read-write, admin
+*   The third difference is that this version includes a preliminary implementation of a simple webconsole.
 
-网页控制台可在地址访问`http://<server-ip>:21114/`登录名为“admin”，密码为“Hello， world！”。\
-你可以在 Builtins 的 API 服务器上浏览 API 文档，地址是`http://<server-ip>:21114/api/doc/`.
+The webconsole is accessible at the address `http://<server-ip>:21114/` with login "admin" and password "Hello,world!" .\
+You can browse the API documentation in the builtins API server at the address `http://<server-ip>:21114/api/doc/`.
 
-非交互式API文档可在以下网站获取[SctgDesk-API-Server Repo](https://sctg-development.github.io/sctgdesk-api-server/).
+A non interactive API documentation is available at [sctgdesk-api-server repo](https://sctg-development.github.io/sctgdesk-api-server/).
 
-## 为项目加星
+## Star the project
 
-**如果你欣赏我的作品，请考虑给它一个星！🤩 或者**[![](https://img.shields.io/static/v1?label=Sponsor\&message=%E2%9D%A4\&logo=GitHub\&color=%23fe8e86)](https://github.com/sponsors/sctg-development)
+**If you appreciate my work, please consider giving it a star! 🤩 or a** [![](https://img.shields.io/static/v1?label=Sponsor\&message=%E2%9D%A4\&logo=GitHub\&color=%23fe8e86)](https://github.com/sponsors/sctg-development)
 
-## 总结：博士
+## TL;DR
 
-你可以使用以下内容`docker-compose.yml`用来启动服务器的文件：
+You can use the following `docker-compose.yml` file to start the server:
 
 ```yaml
 version: '3'
@@ -85,37 +85,37 @@ services:
     restart: unless-stopped
 ```
 
-并以以下方式开始服务器：
+and start the server with:
 
 ```bash
 mkdir -p data
 docker-compose up 
 ```
 
-## 二元论
+## Binaries
 
-以下平台提供双进制：
+Binaries are available for the following platforms:
 
-*   Linux x86\_64静态链接
-*   Linux arm64 静态链接
-*   Linux armv7 静态链接
+*   Linux x86\_64 statically linked
+*   Linux arm64 statically linked
+*   Linux armv7 statically linked
 *   MacOS Intel
-*   MacOS 苹果硅片
+*   MacOS Apple Silicon
 *   Windows x86\_64
 
-### 默认管理员用户
+### Default admin user
 
-默认管理员用户是用该用户名创建的`admin`以及密码`Hello,world!`.你可以在网页控制台首次登录后更改密码。
+The default admin user is created with the username `admin` and the password `Hello,world!`. You can change the password after the first login on the webconsole.
 
-## API 独立版本
+## API Standalone version
 
-API 独立版本是包含 API 服务器和网页控制台，但不包含 rendez-vous 服务器的版本。\
-独立版本可在其独立仓库中获取[SctgDesk-API-Server](https://github.com/sctg-development/sctgdesk-api-server).\
-关于所有与API或网页控制台相关的问题，请参见[SctgDesk-API-Server](https://github.com/sctg-development/sctgdesk-api-server)存储 库。
+The api standalone version is a version of the server that includes the API server and the webconsole but not the rendez-vous server.\
+The standalone version is available in its own repository [sctgdesk-api-server](https://github.com/sctg-development/sctgdesk-api-server).\
+For all api or webconsole related issues, please refer to the [sctgdesk-api-server](https://github.com/sctg-development/sctgdesk-api-server) repository.
 
-## 截图
+## Screenshots
 
-### 网页控制台
+### Webconsole
 
 <img width="1085" alt="login" src="https://github.com/sctg-development/sctgdesk-server/assets/165936401/fe72a374-8a98-4606-8632-3d919f9317c9">
 
@@ -133,11 +133,11 @@ API 独立版本是包含 API 服务器和网页控制台，但不包含 rendez-
 
 <img width="621" alt="add rules" src="https://github.com/sctg-development/sctgdesk-api-server/assets/165936401/355f3903-2b54-4b08-abd0-e33c84a260ed">
 
-### API 文档
+### Api documentation
 
 <img width="1502" alt="apidoc" src="https://github.com/sctg-development/sctgdesk-server/assets/165936401/88fe7910-fe62-43e5-a16c-70dc1201e040">
 
-### 在 Rustdesk 客户端中的应用
+### Use in Rustdesk client
 
 <img width="913" alt="Capture d’écran 2024-05-24 à 12 14 34" src="https://github.com/sctg-development/sctgdesk-server/assets/165936401/1b253577-dce2-4163-9a49-ba4b3da37812">
 
@@ -145,10 +145,10 @@ API 独立版本是包含 API 服务器和网页控制台，但不包含 rendez-
 
 <img width="927" alt="Capture d’écran 2024-05-24 à 12 07 32" src="https://github.com/sctg-development/sctgdesk-server/assets/165936401/f447f5fa-bc77-4bc6-858a-c6cadf9b7f6c">
 
-## 生成自动更新链接
+## Generating autoupdate links
 
-我们修改了客户端，使其从API服务器中获取自动更新链接，而非从Github发布中获取。\
-为了让自动更新链接正常工作，你需要修改客户端，从API服务器获取自动更新链接。这[你该如何做到](https://github.com/sctg-development/sctgdesk/blob/481d3516fef1daa145d8044594187cb11959f8be/src/common.rs#L953L972):
+We modified our client to retrieve the autoupdate links from the api server rather from Github releases.\
+For having the autoupdate links working, you need to modify your client to retrieve the autoupdate links from the api server. This [how you can do it](https://github.com/sctg-development/sctgdesk/blob/481d3516fef1daa145d8044594187cb11959f8be/src/common.rs#L953L972):
 
 ```rust
 // src/common.rs
@@ -174,11 +174,11 @@ async fn check_software_update_() -> hbb_common::ResultType<()> {
 }
 ```
 
-# 安全
+# Security
 
-嵌入式API服务器既不安全，也无法防止DDOS攻击。一个好做法是在API服务器前使用反向代理。NGINX是这个目的的好选择。HAProxy也是个不错的选择。\
-我们在生产环境中使用 HAProxy 来设置 API 服务器。
-这是我们为HAProxy提供的配置文件，仅作为示例提供。你应该根据自己的需求进行调整。
+The embedded API server is not secured nor protected agains DDOS attacks. A good practice is to use a reverse proxy in front of the API server. NGINX is a good choice for this purpose. HAProxy is also a good choice.\
+We use HAProxy in front of the API server in our production environment.
+This is our configuration file for HAProxy it is provided as an example only. You should adapt it to your own needs.:
 
 ```haproxy
 global
@@ -235,7 +235,7 @@ backend hbbr_wss_backend
     server srv_main 127.0.0.1:21119
 ```
 
-HBBS服务器启动时
+The hbbs server is launched with
 
 ```service
 [Unit]
@@ -263,68 +263,68 @@ RestartSec=10
 WantedBy=multi-user.target
 ```
 
-# 限制不受欢迎的访问
+# Limit Unwanted Access
 
-要限制对服务器的访问，你可以使用`--logged-in-only`选项或设置`LOGGED_IN_ONLY=Y`环境变量`hbbs`服务器。这将限制控制权仅限登录用户。
+To restrict access to your server, you can use the `--logged-in-only` option or set the `LOGGED_IN_ONLY=Y` environment variable for the `hbbs` server. This will limit control to logged-in users only.
 
-即使开启了这个选项，用户仍然可以在 Rendez-vous 服务器上注册，但他们无法控制其他用户的对等服务器。如果有人在未登录的情况下试图控制对等端，他们会收到错误信息：
+Even with this option enabled, users can still register on the Rendez-vous server, but they won't be able to control another user's peer. If someone tries to control a peer without being logged in, they'll receive an error message:
 
 <img width="524" alt="Error message for unauthenticated control attempt" src="https://github.com/user-attachments/assets/cfa46504-39d8-46a7-9072-3ece6818b4a3">
 
-启用此功能后，您可以为服务器增加额外安全层，防止未经授权的访问。
+By enabling this feature, you can add an extra layer of security to your server and prevent unauthorized access.
 
-**配置`LOGGED_IN_ONLY`**
+**Configuring `LOGGED_IN_ONLY`**
 
-启用此功能：
+To enable this feature:
 
-1.  设置`LOGGED_IN_ONLY=Y`环境变量`hbbs`服务器。
-2.  或者，你也可以使用`--logged-in-only`运行`hbbs`服务器。
+1.  Set the `LOGGED_IN_ONLY=Y` environment variable for the `hbbs` server.
+2.  Alternatively, you can use the `--logged-in-only` option when running the `hbbs` server.
 
-**例**
+**Example**
 
-要设置`LOGGED_IN_ONLY`环境变量，你可以在你的`~/.bashrc`文件或同等文件：
+To set the `LOGGED_IN_ONLY` environment variable, you can add the following line to your `~/.bashrc` file or equivalent:
 
 ```bash
 export LOGGED_IN_ONLY=Y
 ```
 
-# RustDesk 服务器程序
+# RustDesk Server Program
 
 [![build](https://github.com/sctg-development/sctgdesk-server/actions/workflows/multiarch-docker-hub.yml/badge.svg)](https://github.com/sctg-development/sctgdesk-server/actions/workflows/multiarch-docker-hub.yml)
 [![build](https://github.com/sctg-development/sctgdesk-server/actions/workflows/macos-intel-build.yml/badge.svg)](https://github.com/sctg-development/sctgdesk-server/actions/workflows/macos-intel-build.yml)
 [![build](https://github.com/sctg-development/sctgdesk-server/actions/workflows/windows.yml/badge.svg)](https://github.com/sctg-development/sctgdesk-server/actions/workflows/windows.yml)
 
-[**下载**](https://github.com/sctgdesk/sctgdesk-server/releases)
+[**Download**](https://github.com/sctgdesk/sctgdesk-server/releases)
 
-[**手动**](https://rustdesk.com/docs/en/self-host/)
+[**Manual**](https://rustdesk.com/docs/en/self-host/)
 
-[**常见问题**](https://github.com/rustdesk/rustdesk/wiki/FAQ)
+[**FAQ**](https://github.com/rustdesk/rustdesk/wiki/FAQ)
 
-你可以自己托管RustDesk服务器，它是免费且开源的。
+Self-host your own RustDesk server, it is free and open source.
 
-## 如何手动构建
+## How to build manually
 
-首先你需要有一个可用的 Rust 开发工具链和一个 Node ≥20 的安装。
+First you need to have a working Rust development toolchain and a Node ≥ 20 working installation.
 
-*   Unics（Linux、MacOS等）：
+*   Unices (Linux, MacOS, etc.):
 
 ```bash
 DATABASE_URL=sqlite://$(pwd)/db_v2.sqlite3 cargo build --release
 ```
 
-*   带 cmd.exe shell 的 Windows：
+*   Windows with cmd.exe shell:
 
 ```cmd
 set "DATABASE_URL=sqlite://%CD%/db_v2.sqlite3" && cargo build --release
 ```
 
-目标/发布中将生成三个可执行文件。
+Three executables will be generated in target/release.
 
 *   hbbs - RustDesk ID/Rendezvous server with API server
-*   hbbr - RustDesk 中继服务器
-*   rustdesk-utils - RustDesk CLI 工具
+*   hbbr - RustDesk relay server
+*   rustdesk-utils - RustDesk CLI utilities
 
-你可以在[releases](https://github.com/sctg-development/sctgdesk-server/releases) page.
+You can find updated binaries on the [releases](https://github.com/sctg-development/sctgdesk-server/releases) page.
 
 All released binaries after release v1.1.99-40 are attestated with Github Actions. You can check the attestation by checking the sha256sum of the binary with `https://search.sigstore.dev/?hash=<sha256>` for example.
 
